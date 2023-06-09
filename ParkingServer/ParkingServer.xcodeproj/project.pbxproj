@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F69244442A31988B003230C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244432A31988B003230C5 /* AppDelegate.swift */; };
+		F69244462A31988B003230C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244452A31988B003230C5 /* SceneDelegate.swift */; };
+		F69244482A31988B003230C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244472A31988B003230C5 /* ViewController.swift */; };
+		F692444D2A31988C003230C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F692444C2A31988C003230C5 /* Assets.xcassets */; };
+		F69244502A31988C003230C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F692444E2A31988C003230C5 /* LaunchScreen.storyboard */; };
+		F69244592A31994D003230C5 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244582A31994D003230C5 /* EndPoint.swift */; };
+		F692445B2A319972003230C5 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692445A2A319972003230C5 /* HTTPMethod.swift */; };
+		F692445D2A31998A003230C5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692445C2A31998A003230C5 /* NetworkError.swift */; };
+		F692445F2A31999E003230C5 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692445E2A31999E003230C5 /* NetworkRouter.swift */; };
+		F69244612A31AB31003230C5 /* NaverGeoCodingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244602A31AB31003230C5 /* NaverGeoCodingAPI.swift */; };
+		F69244642A31AF6A003230C5 /* ParkingPlaceItemDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244632A31AF6A003230C5 /* ParkingPlaceItemDTO.swift */; };
+		F69244662A31AF9A003230C5 /* ParkingPlaceFieldDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244652A31AF9A003230C5 /* ParkingPlaceFieldDTO.swift */; };
+		F69244682A31AFCA003230C5 /* ParkingPlaceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244672A31AFCA003230C5 /* ParkingPlaceDTO.swift */; };
+		F692446C2A31B01C003230C5 /* NaverGeocodingMetaDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692446B2A31B01C003230C5 /* NaverGeocodingMetaDTO.swift */; };
+		F692446E2A31B02D003230C5 /* NaverGeocodingAddressElementDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692446D2A31B02D003230C5 /* NaverGeocodingAddressElementDTO.swift */; };
+		F69244702A31B03C003230C5 /* NaverGeocodingAddressDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692446F2A31B03C003230C5 /* NaverGeocodingAddressDTO.swift */; };
+		F69244722A31B05A003230C5 /* NaverGeocodingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244712A31B05A003230C5 /* NaverGeocodingDTO.swift */; };
+		F69244742A31B286003230C5 /* ParkingStandardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244732A31B286003230C5 /* ParkingStandardData.swift */; };
+		F69244772A31B7DF003230C5 /* ParkingPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244762A31B7DF003230C5 /* ParkingPlace.swift */; };
+		F69244792A31BF9E003230C5 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244782A31BF9E003230C5 /* Coordinate.swift */; };
+		F692447C2A31D10A003230C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F692447B2A31D10A003230C5 /* GoogleService-Info.plist */; };
+		F692447F2A31D1B8003230C5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F692447E2A31D1B8003230C5 /* FirebaseDatabase */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F69244402A31988B003230C5 /* ParkingServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69244432A31988B003230C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F69244452A31988B003230C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F69244472A31988B003230C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F692444C2A31988C003230C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F692444F2A31988C003230C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F69244512A31988C003230C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69244582A31994D003230C5 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		F692445A2A319972003230C5 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F692445C2A31998A003230C5 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F692445E2A31999E003230C5 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		F69244602A31AB31003230C5 /* NaverGeoCodingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverGeoCodingAPI.swift; sourceTree = "<group>"; };
+		F69244632A31AF6A003230C5 /* ParkingPlaceItemDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingPlaceItemDTO.swift; sourceTree = "<group>"; };
+		F69244652A31AF9A003230C5 /* ParkingPlaceFieldDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingPlaceFieldDTO.swift; sourceTree = "<group>"; };
+		F69244672A31AFCA003230C5 /* ParkingPlaceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingPlaceDTO.swift; sourceTree = "<group>"; };
+		F692446B2A31B01C003230C5 /* NaverGeocodingMetaDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverGeocodingMetaDTO.swift; sourceTree = "<group>"; };
+		F692446D2A31B02D003230C5 /* NaverGeocodingAddressElementDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverGeocodingAddressElementDTO.swift; sourceTree = "<group>"; };
+		F692446F2A31B03C003230C5 /* NaverGeocodingAddressDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverGeocodingAddressDTO.swift; sourceTree = "<group>"; };
+		F69244712A31B05A003230C5 /* NaverGeocodingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverGeocodingDTO.swift; sourceTree = "<group>"; };
+		F69244732A31B286003230C5 /* ParkingStandardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingStandardData.swift; sourceTree = "<group>"; };
+		F69244762A31B7DF003230C5 /* ParkingPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingPlace.swift; sourceTree = "<group>"; };
+		F69244782A31BF9E003230C5 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		F692447A2A31C6BE003230C5 /* APIKeys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = APIKeys.xcconfig; sourceTree = "<group>"; };
+		F692447B2A31D10A003230C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F692443D2A31988B003230C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F692447F2A31D1B8003230C5 /* FirebaseDatabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F69244372A31988B003230C5 = {
+			isa = PBXGroup;
+			children = (
+				F69244422A31988B003230C5 /* ParkingServer */,
+				F69244412A31988B003230C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F69244412A31988B003230C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F69244402A31988B003230C5 /* ParkingServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F69244422A31988B003230C5 /* ParkingServer */ = {
+			isa = PBXGroup;
+			children = (
+				F69244432A31988B003230C5 /* AppDelegate.swift */,
+				F69244752A31B7D1003230C5 /* Model */,
+				F69244622A31AEE9003230C5 /* DTO */,
+				F69244572A319942003230C5 /* Network */,
+				F69244452A31988B003230C5 /* SceneDelegate.swift */,
+				F69244472A31988B003230C5 /* ViewController.swift */,
+				F692444C2A31988C003230C5 /* Assets.xcassets */,
+				F692444E2A31988C003230C5 /* LaunchScreen.storyboard */,
+				F69244512A31988C003230C5 /* Info.plist */,
+				F692447A2A31C6BE003230C5 /* APIKeys.xcconfig */,
+				F692447B2A31D10A003230C5 /* GoogleService-Info.plist */,
+			);
+			path = ParkingServer;
+			sourceTree = "<group>";
+		};
+		F69244572A319942003230C5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F69244582A31994D003230C5 /* EndPoint.swift */,
+				F692445A2A319972003230C5 /* HTTPMethod.swift */,
+				F692445C2A31998A003230C5 /* NetworkError.swift */,
+				F692445E2A31999E003230C5 /* NetworkRouter.swift */,
+				F69244602A31AB31003230C5 /* NaverGeoCodingAPI.swift */,
+				F69244732A31B286003230C5 /* ParkingStandardData.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F69244622A31AEE9003230C5 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				F692446A2A31AFF1003230C5 /* NaverGeoCoding */,
+				F69244692A31AFDE003230C5 /* ParkingPlace */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		F69244692A31AFDE003230C5 /* ParkingPlace */ = {
+			isa = PBXGroup;
+			children = (
+				F69244632A31AF6A003230C5 /* ParkingPlaceItemDTO.swift */,
+				F69244652A31AF9A003230C5 /* ParkingPlaceFieldDTO.swift */,
+				F69244672A31AFCA003230C5 /* ParkingPlaceDTO.swift */,
+			);
+			path = ParkingPlace;
+			sourceTree = "<group>";
+		};
+		F692446A2A31AFF1003230C5 /* NaverGeoCoding */ = {
+			isa = PBXGroup;
+			children = (
+				F692446B2A31B01C003230C5 /* NaverGeocodingMetaDTO.swift */,
+				F692446D2A31B02D003230C5 /* NaverGeocodingAddressElementDTO.swift */,
+				F692446F2A31B03C003230C5 /* NaverGeocodingAddressDTO.swift */,
+				F69244712A31B05A003230C5 /* NaverGeocodingDTO.swift */,
+			);
+			path = NaverGeoCoding;
+			sourceTree = "<group>";
+		};
+		F69244752A31B7D1003230C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F69244762A31B7DF003230C5 /* ParkingPlace.swift */,
+				F69244782A31BF9E003230C5 /* Coordinate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F692443F2A31988B003230C5 /* ParkingServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F69244542A31988C003230C5 /* Build configuration list for PBXNativeTarget "ParkingServer" */;
+			buildPhases = (
+				F692443C2A31988B003230C5 /* Sources */,
+				F692443D2A31988B003230C5 /* Frameworks */,
+				F692443E2A31988B003230C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingServer;
+			packageProductDependencies = (
+				F692447E2A31D1B8003230C5 /* FirebaseDatabase */,
+			);
+			productName = ParkingServer;
+			productReference = F69244402A31988B003230C5 /* ParkingServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F69244382A31988B003230C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F692443F2A31988B003230C5 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F692443B2A31988B003230C5 /* Build configuration list for PBXProject "ParkingServer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F69244372A31988B003230C5;
+			packageReferences = (
+				F692447D2A31D1B8003230C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F69244412A31988B003230C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F692443F2A31988B003230C5 /* ParkingServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F692443E2A31988B003230C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69244502A31988C003230C5 /* LaunchScreen.storyboard in Resources */,
+				F692444D2A31988C003230C5 /* Assets.xcassets in Resources */,
+				F692447C2A31D10A003230C5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F692443C2A31988B003230C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69244682A31AFCA003230C5 /* ParkingPlaceDTO.swift in Sources */,
+				F692446E2A31B02D003230C5 /* NaverGeocodingAddressElementDTO.swift in Sources */,
+				F69244482A31988B003230C5 /* ViewController.swift in Sources */,
+				F69244442A31988B003230C5 /* AppDelegate.swift in Sources */,
+				F69244642A31AF6A003230C5 /* ParkingPlaceItemDTO.swift in Sources */,
+				F69244592A31994D003230C5 /* EndPoint.swift in Sources */,
+				F69244722A31B05A003230C5 /* NaverGeocodingDTO.swift in Sources */,
+				F69244772A31B7DF003230C5 /* ParkingPlace.swift in Sources */,
+				F69244792A31BF9E003230C5 /* Coordinate.swift in Sources */,
+				F692445D2A31998A003230C5 /* NetworkError.swift in Sources */,
+				F69244662A31AF9A003230C5 /* ParkingPlaceFieldDTO.swift in Sources */,
+				F692446C2A31B01C003230C5 /* NaverGeocodingMetaDTO.swift in Sources */,
+				F69244702A31B03C003230C5 /* NaverGeocodingAddressDTO.swift in Sources */,
+				F69244742A31B286003230C5 /* ParkingStandardData.swift in Sources */,
+				F692445B2A319972003230C5 /* HTTPMethod.swift in Sources */,
+				F69244462A31988B003230C5 /* SceneDelegate.swift in Sources */,
+				F692445F2A31999E003230C5 /* NetworkRouter.swift in Sources */,
+				F69244612A31AB31003230C5 /* NaverGeoCodingAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F692444E2A31988C003230C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F692444F2A31988C003230C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F69244522A31988C003230C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F69244532A31988C003230C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F69244552A31988C003230C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F692447A2A31C6BE003230C5 /* APIKeys.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkingServer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ooj.ParkingServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F69244562A31988C003230C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F692447A2A31C6BE003230C5 /* APIKeys.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkingServer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ooj.ParkingServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F692443B2A31988B003230C5 /* Build configuration list for PBXProject "ParkingServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69244522A31988C003230C5 /* Debug */,
+				F69244532A31988C003230C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F69244542A31988C003230C5 /* Build configuration list for PBXNativeTarget "ParkingServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69244552A31988C003230C5 /* Debug */,
+				F69244562A31988C003230C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F692447D2A31D1B8003230C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F692447E2A31D1B8003230C5 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F692447D2A31D1B8003230C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F69244382A31988B003230C5 /* Project object */;
+}
