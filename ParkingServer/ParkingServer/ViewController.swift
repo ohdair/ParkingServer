@@ -19,28 +19,34 @@ class ViewController: UIViewController {
 
         Task {
 
-            //MARK: - Firebase Data를 확인
-            let firebaseSnapshot = try await ref.getData()
-            guard let firebaseDictionary = firebaseSnapshot.value as? [String: [String]],
-                  let firebaseData = firebaseDictionary["데이터"] else {
-                return
-            }
-            print("Firebase Data 갯수 : ", firebaseData.count)
-
             //MARK: - 주차장공공데이터.json 저장 및 데이터 가공
+            print("주차장 공공데이터를 확인 중입니다")
             let parkingPlaceRequest = try ParkingStandardData().urlRequest
             guard let parkingPlaceData = try await NetworkRouter().fetchItem(with: parkingPlaceRequest, model: ParkingPlaceDTO.self) else {
                 return
             }
-            print("주차장공공데이터 Data 갯수 : ", parkingPlaceData.records.count)
+
+            //MARK: - Firebase Data를 확인
+            print("Firebase 데이터를 확인 중입니다")
+            let firebaseSnapshot = try await ref.child("data").getData()
 
             //MARK: - 공공데이터와 서버에 있는 데이터 확인
-            guard parkingPlaceData.records.count != firebaseData.count else {
-                print("공공데이터와 서버의 데이터 갯수가 동일합니다.")
-                return
+            if let firebaseData = firebaseSnapshot.value as? [String] {
+                guard parkingPlaceData.records.count != firebaseData.count else {
+                    print("서버는 최신 상태입니다")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        exit(0)
+                    }
+                    return
+                }
             }
 
+            //MARK: - 파이어베이스에 데이터 삭제
+            try await ref.child("data").removeValue()
+            print("데이터 삭제 완료!")
+
             //MARK: - 공공데이터를 가공
+            print("데이터 가공을 시작합니다")
             let parkingPlaces: [ParkingPlace] = parkingPlaceData.records.map { DTO in
                 return DTO.convert()
             }
@@ -59,7 +65,13 @@ class ViewController: UIViewController {
                 realDATA.append(uploadData)
             }
 
-            try await self.ref.child("데이터").setValue(realDATA)
+            //MARK: - 파이어베이스에 데이터 저장
+            try await self.ref.child("data").setValue(realDATA)
+            print("Firebase 데이터 저장")
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                exit(0)
+            }
         }
     }
 }

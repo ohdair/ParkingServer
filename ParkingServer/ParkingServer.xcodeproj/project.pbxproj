@@ -27,8 +27,8 @@
 		F69244742A31B286003230C5 /* ParkingStandardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244732A31B286003230C5 /* ParkingStandardData.swift */; };
 		F69244772A31B7DF003230C5 /* ParkingPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244762A31B7DF003230C5 /* ParkingPlace.swift */; };
 		F69244792A31BF9E003230C5 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69244782A31BF9E003230C5 /* Coordinate.swift */; };
-		F692447C2A31D10A003230C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F692447B2A31D10A003230C5 /* GoogleService-Info.plist */; };
 		F692447F2A31D1B8003230C5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F692447E2A31D1B8003230C5 /* FirebaseDatabase */; };
+		F6AADA022A333CFE00897ED0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6AADA012A333CFE00897ED0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +55,7 @@
 		F69244762A31B7DF003230C5 /* ParkingPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingPlace.swift; sourceTree = "<group>"; };
 		F69244782A31BF9E003230C5 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		F692447A2A31C6BE003230C5 /* APIKeys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = APIKeys.xcconfig; sourceTree = "<group>"; };
-		F692447B2A31D10A003230C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6AADA012A333CFE00897ED0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 				F692444E2A31988C003230C5 /* LaunchScreen.storyboard */,
 				F69244512A31988C003230C5 /* Info.plist */,
 				F692447A2A31C6BE003230C5 /* APIKeys.xcconfig */,
-				F692447B2A31D10A003230C5 /* GoogleService-Info.plist */,
+				F6AADA012A333CFE00897ED0 /* GoogleService-Info.plist */,
 			);
 			path = ParkingServer;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 			files = (
 				F69244502A31988C003230C5 /* LaunchScreen.storyboard in Resources */,
 				F692444D2A31988C003230C5 /* Assets.xcassets in Resources */,
-				F692447C2A31D10A003230C5 /* GoogleService-Info.plist in Resources */,
+				F6AADA022A333CFE00897ED0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
